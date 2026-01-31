@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All My Foods</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+    <div class="top-menu">
+        <a href="index.html">🏠 Home</a>
+        <a href="html2.html">🍜 Foods and 🍹Drinks</a>
+        <a href="html3.html">📋 Menu</a>
+        <a href="htmlcontact.html">📞 Contact</a>
+    </div>
+
+
+    
+
+<!-- FLYING DRAGON -->
+<img src="giphy.png" alt="Flying Dragon" class="dragon">
+
+<img src="1.gif" alt="rocket" class="rocket" >
+
+<img src="1.gif" alt="rocket" class="rocket2" >
+
+<!-- CHINESE NEW YEAR LOGO -->
+<div class="logo">HAPPY CHINESE NEW YEAR 🧧</div>
+
+<!-- DISCOUNT BANNER -->
+<div class="discount">🎉 10% OFF for CNY Orders! 🧧</div>
+
+
+<section class="hero" id="home">
+    <img src="blackdude.png" alt="Chinese New Year Food">
+    <div class="hero-overlay"></div>
+    <div class="hero-content" style="font-family: 'Noto Sans SC', sans-serif; color: #FFD700;">
+        <span class="hero-badge" style="background: #FFEB3B; color: #B71C1C; font-family: 'Noto Sans SC', sans-serif;">🐍 Year of the Snake 2026</span>
+        <h1 style="color: #FFF8DC; font-family: 'Noto Sans SC', sans-serif;">
+            Celebrate with <span style="color: #FFEB3B;">Authentic Flavors</span>
+        </h1>
+        <p style="color: #FFE082; font-family: 'Noto Sans SC', sans-serif;">
+            Traditional Chinese New Year dishes prepared with love. Order now and get 10% OFF!
+        </p>
+        <div class="hero-buttons">
+            <a href="html2.html" class="btn-secondary" style="font-family: 'Noto Sans SC', sans-serif;">🛒 Order Now</a>
+            <a href="html3.html" class="btn-secondary" style="font-family: 'Noto Sans SC', sans-serif;">📋 View All Menu</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Traditional Foods Section -->
+<section id="foods">
+    <h2 class="section-title">🥢 Traditional CNY Foods and Drinks That Trending 🥢</h2>
+    <div class="food-grid">
+        <div class="food-card" onclick="addToCart('Dim Sum Basket', '$8.00')">
+            <img src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=400&h=400&fit=crop" alt="Dim Sum">
+            <h4>🥟 Dim Sum Basket</h4>
+            <div class="price">$8.00</div>
+        </div>
+        <div class="food-card" onclick="addToCart('Longevity Noodles', '$6.50')">
+            <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&h=400&fit=crop" alt="Noodles">
+            <h4>🍜 Longevity Noodles</h4>
+            <div class="price">$6.50</div>
+        </div>
+        <div class="food-card" onclick="addToCart('Spring Rolls', '$4.00')">
+            <img src="https://images.unsplash.com/photo-1526318896980-cf78c088247c?w=400&h=400&fit=crop" alt="Spring Rolls">
+            <h4>🥢 Spring Rolls</h4>
+            <div class="price">$4.00</div>
+        </div>
+        <div class="food-card" onclick="addToCart('Peking Duck', '$18.00')">
+            <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400&h=400&fit=crop" alt="Peking Duck">
+            <h4>🦆 Peking Duck</h4>
+            <div class="price">$18.00</div>
+        </div>
+        <div class="food-card" onclick="addToCart('Sweet & Sour Fish', '$12.00')">
+            <img src="https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=400&h=400&fit=crop" alt="Fish">
+            <h4>🐟 Sweet & Sour Fish</h4>
+            <div class="price">$12.00</div>
+        </div>
+        <div class="food-card" onclick="addToCart('Fried Rice', '$5.50')">
+            <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=400&h=400&fit=crop" alt="Fried Rice">
+            <h4>🍚 Fried Rice</h4>
+            <div class="price">$5.50</div>
+        </div>
+        <div class="food-card" onclick="addToCart('Chrysanthemum Tea', '$3.50')">
+            <img src="chry.webp" alt="Chrysanthemum Tea">
+            <h4>🍵 Chrysanthemum Tea</h4>
+            <div class="price">$3.50</div>
+        </div>
+        
+        <div class="food-card" onclick="addToCart('Red Date & Goji Berry Tea', '$4.00')">
+            <img src="Red Date & Goji Berry Tea.avif" alt="Red Date Tea">
+            <h4>🥤 Red Date & Goji Berry Tea</h4>
+            <div class="price">$4.00</div>
+        </div>
+        
+    </div>
+</section>
+
+<section id="menu">
+    <h2 class="section-title">📋 Quick Menu 📋</h2>
+    <div class="quick-menu">
+        <button class="btn-secondary" onclick="addToCart('Dumplings', '$5')">Dumplings - $5</button>
+        <button class="btn-secondary" onclick="addToCart('Hot Pot', '$15')">Hot Pot - $15</button>
+        <button class="btn-secondary" onclick="addToCart('Tangyuan', '$3')">Tangyuan - $3</button>
+        <button class="btn-secondary" onclick="addToCart('Mooncakes', '$4')">Mooncakes - $4</button>
+        <button class="btn-secondary" onclick="addToCart('Baozi', '$3.50')">Baozi - $3.50</button>
+        <button class="btn-secondary" onclick="addToCart('Tea Set', '$8')">Tea Set - $8</button>
+    </div>
+</section>
+
+
+<!-- CART SLOT -->
+<div style="
+    max-width:600px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:15px;
+    border:2px solid gold;
+">
+
+    <h3>🛒 Your Order</h3>
+
+    <div id="cart-slot" style="margin:15px 0;"></div>
+
+    <div id="cart-total" style="font-weight:bold; color:gold;">
+        Total: $0
+    </div>
+
+</div>
+
+
+
+<!-- Customer Info Only - Modern Cool Style -->
+<div style="max-width:600px;margin:50px auto;background:rgba(255,255,255,0.05);padding:30px;border-radius:20px;border:2px solid gold;box-shadow: 0 0 40px rgba(255,215,0,0.3);">
+    <h3 style="font-size:26px;font-weight:bold;color:#FFEB3B;margin-bottom:25px;text-align:center;">📝 Customer Information</h3>
+    
+    <input id="custName" placeholder="Your Name" style="width:100%;padding:15px;margin:12px 0;border-radius:12px;border:none;font-size:17px;background:rgba(255,255,255,0.1);color:#fff;outline:none;box-shadow: inset 0 0 10px rgba(255,235,59,0.3);">
+    <input id="custPhone" placeholder="Phone Number" style="width:100%;padding:15px;margin:12px 0;border-radius:12px;border:none;font-size:17px;background:rgba(255,255,255,0.1);color:#fff;outline:none;box-shadow: inset 0 0 10px rgba(255,235,59,0.3);">
+    <input id="custLocation" placeholder="Delivery Location / Address" style="width:100%;padding:15px;margin:12px 0;border-radius:12px;border:none;font-size:17px;background:rgba(255,255,255,0.1);color:#fff;outline:none;box-shadow: inset 0 0 10px rgba(255,235,59,0.3);">
+
+    <div onclick="submitInfo()" style="margin-top:20px;padding:15px;text-align:center;background:#FFEB3B;color:#B71C1C;font-weight:bold;font-size:18px;border-radius:15px;cursor:pointer;box-shadow: 0 0 20px rgba(255,215,0,0.5);transition:0.3s;">
+        ✅ Submit Info
+    </div>
+</div>
+
+<script>
+function showNotification(message, isError=false){
+    const popup = document.createElement("div");
+    popup.innerHTML = message;
+    popup.style.cssText = `
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: ${isError ? "#B71C1C" : "#FFEB3B"};
+        color: ${isError ? "#FFEB3B" : "#B71C1C"};
+        font-weight: bold;
+        padding: 15px 25px;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(255,215,0,0.7);
+        opacity: 0;
+        z-index: 9999;
+        text-align:center;
+        white-space: pre-line;
+        max-width:90%;
+        animation: popupIn 0.5s forwards, popupOut 0.5s 3s forwards;
+    `;
+    document.body.appendChild(popup);
+    setTimeout(()=>popup.remove(), 3500);
+}
+
+function submitInfo(){
+    const name = document.getElementById("custName").value.trim();
+    const phone = document.getElementById("custPhone").value.trim();
+    const location = document.getElementById("custLocation").value.trim();
+
+    if(name === "" || phone === "" || location === ""){
+        showNotification("⚠️ Please fill Name, Phone & Location!", true);
+        return;
+    }
+
+    showNotification(
+`✅ Information Submitted!
+👤 Name: ${name}
+📞 Phone: ${phone}
+📍 Location: ${location}`
+    );
+
+    document.getElementById("custName").value = "";
+    document.getElementById("custPhone").value = "";
+    document.getElementById("custLocation").value = "";
+}
+
+// ===== POPUP ANIMATIONS =====
+const style = document.createElement("style");
+style.innerHTML = `
+@keyframes popupIn {
+    0% { transform: translateX(-50%) translateY(-20px); opacity:0; }
+    100% { transform: translateX(-50%) translateY(0); opacity:1; }
+}
+@keyframes popupOut {
+    0% { opacity:1; transform: translateX(-50%) translateY(0); }
+    100% { opacity:0; transform: translateX(-50%) translateY(-20px); }
+}
+div[onclick]{
+    transition: 0.3s;
+}
+div[onclick]:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255,215,0,0.8);
+}
+input:focus{
+    box-shadow: inset 0 0 15px rgba(255,235,59,0.6);
+}
+`;
+document.head.appendChild(style);
+</script>
+
+
+
+
+
+<!-- BUY BUTTON -->
+
+
+e<script>
+    let cart = [];
+    let orderNumber = 123;
+    
+    // ADD TO CART
+    function addToCart(name, price){
+        let cleanPrice = parseFloat(price.replace('$',''));
+    
+        cart.push({
+            name: name,
+            price: cleanPrice
+        });
+    
+        updateCartSlot();
+    }
+    
+    // UPDATE CART DISPLAY
+    function updateCartSlot(){
+        const slot = document.getElementById("cart-slot");
+        const totalBox = document.getElementById("cart-total");
+    
+        let total = 0;
+        slot.innerHTML = "";
+    
+        cart.forEach(item => {
+            total += item.price;
+    
+            let div = document.createElement("div");
+            div.innerHTML = item.name + " - $" + item.price.toFixed(2);
+            slot.appendChild(div);
+        });
+    
+        totalBox.innerHTML = "Total: $" + total.toFixed(2);
+    }
+    
+    // BUY NOW
+    function orderNow(){
+    
+        if(cart.length === 0){
+            alert("❌ Cart is empty!");
+            return;
+        }
+    
+        let total = cart.reduce((sum, item) => sum + item.price, 0);
+    
+        alert(
+            "🧾 Order #" + orderNumber +
+            "\nItems: " + cart.length +
+            "\nTotal: $" + total.toFixed(2) +
+            "\n\n✅ Thank you for your order!"
+        );
+    
+        orderNumber++;
+        cart = [];
+        updateCartSlot();
+    }
+    </script>
+    
+
+
+
+
+<script>
+function applyPromo(){
+    let code = document.getElementById("promo").value;
+
+    if(code.toLowerCase() === "cny10"){
+        alert("🎉 Promo Applied! You get 10% OFF");
+    }else{
+        alert("❌ Invalid Code");
+    }
+}
+
+function orderNow(){
+    alert("Thank you for your order! 🧧");
+}
+</script>
+
+<!-- Payment Section -->
+<section>
+    <h2 class="section-title">💳 Easy Payment 💳</h2>
+    <div class="payment-section">
+        <h3>💳 Pay with ABA</h3>
+        <div class="qr-container">
+            <!-- First QR -->
+            <div class="qr-card">
+                <img src="QREN.png" alt="ABA QR Code">
+                <p>Scan to pay</p>
+            </div>
+            <!-- Second QR -->
+            <div class="qr-card">
+                <img src="QRKH.png" alt="ABA QR Code">
+                <p>Scan to pay</p>
+            </div>
+        </div>
+        <p class="payment-info">Fast & Secure Payment 🔒</p>
+        <div class="input-group" style="margin-top:20px;">
+            <input type="file" id="paymentProof" placeholder=" " required>
+            <label for="paymentProof">Upload Screenshot / Receipt</label>
+        </div>
+        <div class="buy-now" onclick="confirmPayment()">✅ Confirm Payment</div>
+    </div>
+</section>
+
+<div class="buy-now" onclick="orderNow()">Buy It Now</div>
+
+<script>
+function confirmPayment(){
+    const proof = document.getElementById("paymentProof").files[0];
+
+    if(!proof){
+        showSuccess("⚠️ Please upload payment proof!");
+        return;
+    }
+
+    showSuccess("🎉 Payment Confirmed! Thank you!");
+    document.getElementById("paymentProof").value = "";
+}
+
+// Popup function
+function showSuccess(msg){
+    let popup = document.getElementById("success-popup");
+    if(!popup){
+        popup = document.createElement("div");
+        popup.id = "success-popup";
+        document.body.appendChild(popup);
+    }
+    popup.textContent = msg;
+    popup.style.cssText = `
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #FFEB3B;
+        color: #B71C1C;
+        font-weight: bold;
+        padding: 15px 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 25px rgba(255,215,0,0.8);
+        opacity: 1;
+        z-index: 9999;
+        transition: opacity 0.5s;
+    `;
+    setTimeout(()=>{ popup.style.opacity = 0; }, 2500);
+}
+</script>
+
+
+
+<section class="cta-section" style="text-align: center; margin: 40px 0;">
+    <a href="#foods" class="btn-secondary">🛒 View All Foods</a>
+    <a href="#menu" class="btn-secondary">📋 Full Menu</a>
+</section>
+
+<section id="contact" style="max-width: 700px; margin: 60px auto; padding: 0 20px;">
+    <h2 class="section-title" style="text-align: center; margin-bottom: 40px; font-size: 32px; color: #FFD700; text-shadow: 2px 2px 4px #800000;">📞 Contact Us 📞</h2>
+    
+    <div class="promo-box" style="background: radial-gradient(ellipse at top, hsl(0, 85%, 25%), hsl(0, 100%, 15%)); color: #FFD700; padding: 30px 25px; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); border: 2px solid rgba(255,215,0,0.3);">
+        <p style="margin-bottom: 15px; font-size: 18px;"><strong>🏠 Address:</strong> 123 Lucky Dragon Street, Chinatown</p>
+        <p style="margin-bottom: 15px; font-size: 18px;"><strong>📞 Phone:</strong> +855 12 888 888</p>
+        <p style="margin-bottom: 15px; font-size: 18px;"><strong>📧 Email:</strong> <a href="mailto:order@allmyfoods.com" style="color: #FFD700; text-decoration: underline;">cny123@allmyfoods.com</a></p>
+        <p style="margin-bottom: 15px; font-size: 18px;"><strong>🕐 Hours:</strong> Mon-Sun: 10AM - 10PM</p>
+        <p style="color: #FFD700; font-weight: bold; font-size: 20px; margin-top: 20px; text-align: center;">🎊 CNY Special: Open 24/7! 🧧</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer style="text-align: center; margin-top: 80px; padding: 40px 20px; background: radial-gradient(ellipse at top, hsl(0, 85%, 25%), hsl(0, 100%, 15%)); color: #FFD700; position: relative; overflow: hidden; border-top: 6px solid rgba(255,215,0,0.5);">
+    
+    <!-- Decorative Lanterns -->
+    <div style="position: absolute; top: -20px; left: 10%; font-size: 50px; opacity: 0.2;">🏮</div>
+    <div style="position: absolute; top: 0; right: 15%; font-size: 60px; opacity: 0.2;">🏮</div>
+    
+    <p style="font-size: 26px; font-weight: bold; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">🧧 All My Foods - CNY 2026 🧧</p>
+    <p style="opacity: 0.9; font-size: 18px; margin-bottom: 25px;">Wishing you prosperity and good fortune! 恭喜发财 🎊</p>
+    
+    <div class="icons" style="font-size: 28px; gap: 20px; display: inline-flex;">
+        <span>🐍</span>
+        <span>🏮</span>
+        <span>🧧</span>
+        <span>🎆</span>
+        <span>🧨</span>
+    </div>
+
+    <p style="margin-top: 25px; font-size: 16px; opacity: 0.7;">&copy; 2026 All My Foods. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>

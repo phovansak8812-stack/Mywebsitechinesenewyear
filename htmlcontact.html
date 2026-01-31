@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="htmlcontact.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All My Foods</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+
+
+    <div class="top-menu">
+      <a href="index.html">🏠 Home</a>
+      <a href="html2.html">🍜 Foods and 🍹Drinks</a>
+      <a href="html3.html">📋 Menu</a>
+      <a href="htmlcontact.html">📞 Contact</a>
+    </div>
+
+
+    
+
+<!-- FLYING DRAGON -->
+<img src="giphy.png" alt="Flying Dragon" class="dragon">
+
+<img src="1.gif" alt="rocket" class="rocket" >
+
+<img src="1.gif" alt="rocket" class="rocket2" >
+
+<!-- CHINESE NEW YEAR LOGO -->
+<div class="logo">HAPPY CHINESE NEW YEAR 🧧</div>
+
+<!-- DISCOUNT BANNER -->
+<div class="discount">🎉 10% OFF for CNY Orders! 🧧</div>
+
+
+
+
+
+
+<section class="menu-section">
+    <div class="menu-header">
+      <h1>📋 Contact Us 📋</h1>
+    </div>
+
+
+
+    <section class="contact-section">
+        <div class="contact-header">
+        </div>
+      
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-card">
+            <h2>📍 Find Us</h2>
+            
+            <div class="info-block">
+              <h3>🏠 Address</h3>
+              <p>123 Lucky Dragon Street</p>
+              <p>Chinatown, Phnom Penh</p>
+              <p>Cambodia 🇰🇭</p>
+            </div>
+            
+            <div class="info-block">
+              <h3>📞 Phone</h3>
+              <p>+855 12 888 888</p>
+              <p>+855 23 456 789</p>
+            </div>
+            
+            <div class="info-block">
+              <h3>📧 Email</h3>
+              <p>order@allmyfoods.com</p>
+            </div>
+            
+            <div class="info-block">
+              <h3>🕐 Hours</h3>
+              <p>Mon-Sun: 10:00 AM - 10:00 PM</p>
+              <p class="cny-special">🎊 CNY Special: Open 24/7!</p>
+            </div>
+      
+            <div class="info-block">
+
+            </div>
+          </div>
+      
+          <!-- Contact Form -->
+          <div class="contact-card">
+            <h2>✉️ Send Message</h2>
+            
+            <form class="contact-form" onsubmit="submitForm(event)">
+              <div class="form-group">
+                <label>Your Name *</label>
+                <input type="text" id="name" required placeholder="Enter your name...">
+              </div>
+              
+              <div class="form-group">
+                <label>Phone Number *</label>
+                <input type="tel" id="phone" required placeholder="+855 XX XXX XXX">
+              </div>
+              
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" placeholder="Enter your email...">
+              </div>
+              
+              <div class="form-group">
+                <label>Message *</label>
+                <textarea id="message" required placeholder="Your message or order..."></textarea>
+              </div>
+              
+              <button type="submit" class="submit-btn">🧧 Send Message</button>
+            </form>
+          </div>
+      
+          <!-- Payment & Map -->
+          <div class="contact-card qr-section">
+            <h2>💳 Quick Payment</h2>
+            <div class="qr-box">
+              <img src="QREN.png" alt="Payment QR Code">
+            </div>
+            <p>Scan to pay via ABA Bank</p>
+
+            <div class="qr-box">
+              <img src="QRKH.png" alt="Payment QR Code">
+            </div>
+            <p>Scan to pay via ABA Bank</p>
+      
+
+      </section>
+
+
+      
+      <script>
+        function submitForm(e) {
+          e.preventDefault();
+          alert('🧧 Message sent successfully! We\'ll get back to you within 24 hours. 恭喜发财!');
+          e.target.reset();
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer style="text-align: center; margin-top: 80px; padding: 40px 20px; background: radial-gradient(ellipse at top, hsl(0, 85%, 25%), hsl(0, 100%, 15%)); color: #FFD700; position: relative; overflow: hidden; border-top: 6px solid rgba(255,215,0,0.5);">
+    
+    <!-- Decorative Lanterns -->
+    <div style="position: absolute; top: -20px; left: 10%; font-size: 50px; opacity: 0.2;">🏮</div>
+    <div style="position: absolute; top: 0; right: 15%; font-size: 60px; opacity: 0.2;">🏮</div>
+    
+    <p style="font-size: 26px; font-weight: bold; margin-bottom: 15px; text-shadow: 2px 2px 5px rgba(0,0,0,0.5);">🧧 All My Foods - CNY 2026 🧧</p>
+    <p style="opacity: 0.9; font-size: 18px; margin-bottom: 25px;">Wishing you prosperity and good fortune! 恭喜发财 🎊</p>
+    
+    <div class="icons" style="font-size: 28px; gap: 20px; display: inline-flex;">
+        <span>🐍</span>
+        <span>🏮</span>
+        <span>🧧</span>
+        <span>🎆</span>
+        <span>🧨</span>
+    </div>
+
+    <p style="margin-top: 25px; font-size: 16px; opacity: 0.7;">&copy; 2026 All My Foods. All rights reserved.</p>
+</footer>
+
+
+    
+    
+
+</body>
+</html>
